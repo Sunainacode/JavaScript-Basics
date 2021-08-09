@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Interactions</title>
+</head>
+<body>
+    <div class="container">
+        This is a container.
+    </div>
+    <script>
+        // alert in in-browser javascript. Does not return anything
+        // alert("This is a message")
+
+        // let name=prompt("What is your name?", "Guest")   //first argument is msg to be displayed and second argument is the default value of that argument's return value                        
+        // console.log("Hello "+name)
+
+        //confirm
+        let deletePost=confirm("Do you really want to delete this post?")
+        // console.log(deletePost)
+        if(deletePost){
+            console.log("Your post has been deleted successfully")
+        }
+        else{
+            console.log("Your post has not been deleted")
+        }
+    </script>
+</body>
+</html>

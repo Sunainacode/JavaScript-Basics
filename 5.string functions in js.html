@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String functions in JavaScript</title>
+</head>
+<body>
+    
+    <script>
+        var str="This is a string"
+        console.log(str)
+        // first index of a substring
+        var position=str.indexOf(' is')
+        console.log(position)
+        // last index of a substring
+        position=str.lastIndexOf('is')
+        console.log(position)
+        // substring from a string
+        var substr=str.slice(1,6) //first argument is starting index and second argument is one more than ending index
+        console.log(substr)
+        substr=str.substr(2,8) //first argument is starting index and second argument is the length of substring which is to be printed
+        console.log(substr)
+        substr=str.substring(1,6) //arguments same as slice
+        console.log(substr)
+        // Difference between slice and substring: Slice can take negative values but substring cannot take negative values
+        var replaced=str.replace('string','Sunaina')
+        console.log(str)
+        console.log(replaced)
+        console.log(str.toUpperCase())
+        console.log(str.toLocaleUpperCase())
+        var newString=str.concat('New String')
+        console.log(newString)
+        var white='         This contains       white spaces            '
+        console.log(white.trim())//trims white spaces from starting and end of a string
+        var char3=str.charAt(2)
+        char3=str.charCodeAt(2)
+        console.log(char3)
+        console.log(str[2])
+    </script>
+</body>
+</html>

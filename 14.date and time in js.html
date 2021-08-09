@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Date and Time</title>
+    <style>
+        .container{
+            font-size: 23px;
+            background-color: brown;
+            color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">Current time is <span id="time"></span>
+    </div>
+
+    <script>
+        console.log('This is date and time tutorial');
+        let now=new Date();
+        console.log(now)
+        let dt=new Date(0); //reference time and argument given is in milliseconds
+        console.log(dt);
+        let newdate=new Date("2029-10-4");
+        console.log(newdate);
+        // let ndate=new Date(year,month,date,hours,minutes,seconds,milliseconds);
+        let ndate=new Date(3020,10,4,10,20,34,4);
+        console.log(ndate);
+        let yr=ndate.getFullYear();
+        console.log("The year is ",yr);
+        console.log(Date.now());//prints the number of milliseconds passed after the reference time
+        setInterval(updateTime,1000);
+        function updateTime(){
+            time.innerHTML=new Date();
+        }
+    </script>
+</body>
+</html>

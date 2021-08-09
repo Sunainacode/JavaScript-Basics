@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Arrow Functions</title>
+</head>
+<body>
+    <div class="container">This is container</div>
+    <script>
+        // function greet(name){
+        //     console.log("Hello ",name);
+        // }
+        // greet("Sunaina");
+
+        //Arrow functions
+        // greet=(name)=>{
+        //     console.log("Hello",name);
+        // }
+        // greet("Aayush");
+
+        let greet=(name)=>console.log("Hello",name);
+        greet("Sunaina");
+
+        let sum=(a,b)=>a+b;
+        console.log(sum(2,3));
+        let half=a=>a/2;
+        console.log(half(34));
+
+        let obj1={
+            names:["Arun","Archana","Aayush","Sunaina"],
+            speak(){
+                this.names.forEach((student) => {
+                    console.log("Kukdoo koo",student);
+                });
+            }
+        }
+        obj1.speak();
+
+        //in an arrow function, if this pointer is used, then it points to the this object of its parent but in a normal function, it does not go to its parent rather looks for this object inside the function and if not found, it prints undefined.
+    </script>
+</body>
+</html>

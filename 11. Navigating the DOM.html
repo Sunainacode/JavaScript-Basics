@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Navigating the DOM</title>
+</head>
+<body>
+    <div class="container" id="main"> 
+        <ul id="nav">
+            <li>Home</li>
+            <li>Contact Us</li>
+            <li>Services</li>
+            <li>More About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">This is another class</div>
+    <script>
+        let main=document.getElementById('main')
+        console.log(main)
+        let nav=document.getElementById('nav')
+        console.log(nav)
+        let c=document.getElementsByClassName('container')
+        console.log(c)
+        let sel=document.querySelector('.container') //returns the first found element which has class name as container
+        console.log("Selector returns ",sel)
+    </script>
+</body>
+</html>

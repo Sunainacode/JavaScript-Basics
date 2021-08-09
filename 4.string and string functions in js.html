@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaaScript | String and String Functions</title>
+</head>
+<body>
+    <div class="container">
+        <h2>This is a heading</h2>
+        <div id="content"></div>
+        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veritatis ratione repellat pariatur incidunt minus eligendi, temporibus nobis quae rem obcaecati ab omnis amet iste, aut aliquid error illo. Magnam non quis distinctio aut accusamus aliquid totam inventore, incidunt consectetur iste voluptatem alias maxime dolores id, consequuntur fuga ratione. Aut?</div>
+    </div>
+    <script>
+        var string="this"
+        var string2='this'
+        console.log(string+string2)
+        var name="Sunaina"
+        var domain="Web Development"
+        var msg="Is a good girl"
+        var temp=`${name} ${msg} and she has her domain as ${domain}`
+        console.log(temp)
+        var len=domain.length
+        console.log(`The length of domain is ${len}`)
+        console.log("Hello World \n Hi")
+        console.log("\\n is an escape character that takes the text to a new line")
+        var y=new String("This") //String constructor
+        console.log(y)
+        document.getElementById('content').innerHTML = '<h3>this is a string</h3>';                                                              
+    </script>
+</body>
+</html>
