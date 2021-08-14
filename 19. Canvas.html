@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="hide">Hide Canvas</button>
+</body>
+<script>
+    // canvas
+    var canvas=document.createElement('canvas');
+    canvas.setAttribute('id','canva');
+    canvas.width=500;
+    canvas.height=55;
+    var ctx=canvas.getContext('2d');
+    ctx.font='50px Cursive';
+    ctx.fillText("Hello World",50,50);
+    document.body.appendChild(canvas); 
+    
+    
+    // DOM Manipulation
+    var btn=document.getElementById("hide");
+    btn.addEventListener("click",()=>{
+        if(window.confirm("Are you sure?")){
+            if((btn.textContent==="Hide Canvas")){
+                document.querySelector('#canva').style.visibility="hidden";
+                btn.textContent="Show Canvas";
+            }
+            else{
+                document.querySelector('#canva').style.visibility="visible";
+                btn.textContent="Hide Canvas";
+            }
+        }   
+    });
+    
+</script>
+</html>
