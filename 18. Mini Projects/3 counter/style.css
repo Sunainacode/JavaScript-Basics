@@ -1,0 +1,22 @@
+span{
+    border: 2px solid black;
+}
+
+body{
+    background-color: black;
+    background: url('background.jpg')no-repeat center center/cover;
+    background-blend-mode: color-dodge;
+}
+.counter{
+    position: relative;
+    margin: 22% 41.5%;
+}
+button{
+    background: linear-gradient(45deg,lightblue,lightgrey,white);
+    padding: 15px 10px;
+    border-radius: 0px 0px 15px 15px;
+    margin: 10px 10px;
+}
+span{
+    padding: 15px 25px;
+}
